@@ -1,0 +1,74 @@
+
+
+* {
+    display:block;
+}
+
+titlePage {
+    background-color:#ece7da;
+    margin-top:60px;
+    margin-bottom:100px;
+    word-spacing:10px;
+}
+
+/* text sizes */
+
+[rendition~="#xx-large"] {
+    font-size:250%;
+}
+
+[rendition~="#x-large"] {
+    font-size:200%;
+}
+
+[rendition~="#large"] {
+    font-size:150%;
+}
+
+[rendition~="#small"] {
+    font-size:100%;
+}
+
+/* text styles */
+
+[rendition~="#center"] {
+    text-align:center;
+}
+
+[rendition~="#red"] {
+    color:#cc3333;
+}
+
+[rendition~="#uppercase"] {
+    text-transform:uppercase;
+}
+
+@font-face {
+    font-family:Dustismo-Roman;
+    src: url("Dustismo_Roman.ttf");
+    font-stretch:condensed;
+}
+
+/* space */
+
+[quantity="1"] {
+    padding:10px;
+}
+
+[quantity="3"] {
+    padding:30px;
+}
+
+[quantity="4"] {
+    padding:55px;
+}
+
+[quantity="5"] {
+    padding:75px;
+}
+
+docImprint > lb {
+    padding:4px;
+}
+
+
