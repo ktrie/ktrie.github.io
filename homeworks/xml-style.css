@@ -4,11 +4,18 @@
     display:block;
 }
 
+@font-face {
+    font-family:'DumbExperiment';
+    src: url("/css/Reey-Regular.otf");
+    font-stretch:extra-condensed;
+}
+
 titlePage {
     background-color:#ece7da;
     margin-top:60px;
     margin-bottom:100px;
     word-spacing:10px;
+    font-family:'DumbExperiment';
 }
 
 /* text sizes */
@@ -41,12 +48,6 @@ titlePage {
 
 [rendition~="#uppercase"] {
     text-transform:uppercase;
-}
-
-@font-face {
-    font-family:Reey-Regular;
-    src: url("/css/Reey-Regular.otf");
-    font-stretch:extra-condensed;
 }
 
 /* space */
