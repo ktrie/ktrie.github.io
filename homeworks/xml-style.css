@@ -46,7 +46,7 @@ titlePage {
 @font-face {
     font-family:Dustismo-Roman;
     src: url("/css/Dustismo_Roman.ttf");
-    font-stretch:condensed;
+    font-stretch:extra-condensed;
 }
 
 /* space */
