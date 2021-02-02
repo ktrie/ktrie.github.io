@@ -43,11 +43,13 @@ titlePage {
     text-transform:uppercase;
 }
 
+/*
 @font-face {
     font-family:Dustismo-Roman;
     src: url("/css/Dustismo_Roman.ttf");
     font-stretch:extra-condensed;
 }
+*/
 
 /* space */
 
