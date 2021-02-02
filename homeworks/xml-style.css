@@ -5,7 +5,7 @@
 }
 
 @font-face {
-    font-family:'DumbExperiment';
+    font-family:'dumbexperiment';
     src: url("/css/Reey-Regular.otf");
     font-stretch:extra-condensed;
 }
@@ -15,7 +15,10 @@ titlePage {
     margin-top:60px;
     margin-bottom:100px;
     word-spacing:10px;
-    font-family:'DumbExperiment';
+}
+
+hi {
+    font-family:'dumbexperiment';
 }
 
 /* text sizes */
