@@ -4,6 +4,8 @@
     exclude-result-prefixes="xs"
     version="2.0">
     
+    <xsl:strip-space elements="*"/>
+    
     <xsl:template match="/">
         <html>
             <head>
