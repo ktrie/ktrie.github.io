@@ -18,6 +18,7 @@ table {
     margin: 70px auto;
     width: 85%;
     padding: 3px;
+    border-spacing: 4px;
 }
 
 thead {
@@ -30,5 +31,4 @@ td {
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333333;
-    text-align: center;
 }
