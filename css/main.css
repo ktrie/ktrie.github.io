@@ -1,8 +1,3 @@
-@font-face {
-    font-family:'germanica';
-    src: url("/css/PlainGermanica.ttf"); 
-}
-
 body {
     margin: 60px auto;
     width: 70%;
@@ -25,9 +20,8 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 7em;
-    font-family:'germanica';
-    color: #4d0000;
+    font-size: 3em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
     font-size: 1.5em;
@@ -42,7 +36,6 @@ footer {
 ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
-    color: #4d0000;
 }
 
 ul.posts li {
