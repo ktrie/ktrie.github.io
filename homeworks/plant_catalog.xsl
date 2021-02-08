@@ -12,7 +12,7 @@
             </head>
             <body>
                 <h1>Plants</h1>
-                <table cellpadding="3" borderspacing="5">
+                <table>
                     <thead>
                         <td><st>Common Name</st></td>
                         <td><st>Botanical Name</st></td>
