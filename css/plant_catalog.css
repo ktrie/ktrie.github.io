@@ -25,9 +25,8 @@ table {
     margin: 70px auto;
     width: 85%;
     padding: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 thead {
