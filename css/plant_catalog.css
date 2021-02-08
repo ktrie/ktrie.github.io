@@ -14,6 +14,13 @@ h1 {
     color: #003300;
 }
 
+h2 {
+    font-size: 3em;
+    font-family: 'cloisterblack';
+    color: #003300;
+    margin: 70px auto;
+}
+
 table {
     margin: 70px auto;
     width: 85%;
