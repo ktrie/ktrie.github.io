@@ -18,11 +18,11 @@ table {
     margin: 70px auto;
     width: 85%;
     padding: 3px;
-    border-spacing: 4px;
 }
 
 thead {
     font-weight: bold;
+    text-decoration: underline;
 }
 
 tr:hover {background-color: #f2f2f2;}
@@ -31,4 +31,6 @@ td {
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333333;
+    padding-left: 10px;
+    padding-right: 10px;
 }
