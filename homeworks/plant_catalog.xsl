@@ -14,12 +14,12 @@
                 <h1>Plants</h1>
                 <table>
                     <thead>
-                        <td><st>Common Name</st></td>
-                        <td><st>Botanical Name</st></td>
-                        <td><st>Zone</st></td>
-                        <td><st>Light</st></td>
-                        <td><st>Price</st></td>
-                        <td><st>Availability</st></td>
+                        <td>Common Name</td>
+                        <td>Botanical Name</td>
+                        <td>Zone</td>
+                        <td>Light</td>
+                        <td>Price</td>
+                        <td>Availability</td>
                     </thead>
                     <xsl:for-each select="CATALOG/PLANT">
                     <tr>
