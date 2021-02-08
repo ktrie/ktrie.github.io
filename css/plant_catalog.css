@@ -25,6 +25,9 @@ table {
     margin: 70px auto;
     width: 85%;
     padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
 }
 
 thead {
@@ -38,6 +41,5 @@ td {
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333333;
-    padding-left: 10px;
-    padding-right: 10px;
+   
 }
