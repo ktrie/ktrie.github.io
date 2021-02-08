@@ -1,3 +1,8 @@
+@font-face {
+    font-family:'cloisterblack';
+    src: url("/css/CloisterBlack.ttf"); 
+}
+
 body {
     margin: 60px auto;
     width: 70%;
@@ -21,7 +26,8 @@ a:hover {
 }
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'cloisterblack';
+    color: #4d0000;
 }
 p {
     font-size: 1.5em;
@@ -36,6 +42,7 @@ footer {
 ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
+    color: #4d0000;
 }
 
 ul.posts li {
