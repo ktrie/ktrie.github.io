@@ -1,6 +1,7 @@
 @font-face {
     font-family:'cloisterblack';
-    src: url("/css/CloisterBlack.ttf");
+    src: url("/css/CloisterBlack.ttf"); 
+}
 
 body {
     margin: 60px auto;
@@ -20,7 +21,7 @@ table {
 }
 
 thead {
-    height: 70px;
+    font-size: 2.5em;
     font-weight: bold;
 }
 
