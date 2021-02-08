@@ -5,30 +5,29 @@
 
 body {
     margin: 60px auto;
-    width: 85%;
+    width: 75%;
 }
 
 h1 {
     font-size: 5em;
-    font-family:'cloisterblack'
+    font-family:'cloisterblack';
     color: #003300;
 }
 
 table {
     margin: 70px auto;
-    width: 85%;
+    width: 75%;
     padding: 3px;
 }
 
 thead {
-    font-size: 2.5em;
     font-weight: bold;
 }
 
-tr:hover {background-color: #ccffcc;}
+tr:hover {background-color: #f2f2f2;}
 
 td {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: #333;
+    color: #003300;
 }
