@@ -12,20 +12,21 @@
     </xsl:template> 
     
     <!--Match root element-->
-    <xsl:template match="ul">
+    <xsl:template match="html">
         <xsl:result-document href="/Users/kyratriebold/Desktop/Digital Publishing/journals.xml">
             <journals_list>
-                <xsl:apply-templates>
-                    <xsl:sort select="span" order="ascending"/>
-                </xsl:apply-templates>
+                <xsl:apply-templates/>
             </journals_list>
         </xsl:result-document>
     </xsl:template>
     
-    <xsl:template match="main/ul">
-        <xsl:apply-templates>
-            <xsl:sort select="span"/>
-        </xsl:apply-templates>
+    <xsl:template match="div[@class='interior-content']/ul">
+        <xsl:for-each select=".//li">
+            <xsl:sort select="p[1]/span/substring (text(), 4)" order="ascending"/>
+            <journal>
+            <xsl:apply-templates/>
+            </journal>
+        </xsl:for-each>
     </xsl:template>
     
     <!--Stuff I don't want-->
@@ -39,13 +40,7 @@
     <xsl:template match="//div[@class='interior-rail']"/>
     <xsl:template match="//div[@id='tb_external']"/>
     
-    <!--Stuff I do want-->
-    <xsl:template match="li"> 
-        <journal>
-            <xsl:apply-templates/>
-        </journal> 
-    </xsl:template>
-    
+    <!--Stuff I do want--> 
     <xsl:template match="a">
         <title>
             <xsl:value-of select="normalize-space(text())"/>
