@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    exclude-result-prefixes="xs"
+    version="2.0">
+    
+    <xsl:variable name="vPass1">
+        <xsl:apply-templates mode="pass1"/>
+    </xsl:variable>
+    
+    <xsl:template match="node()|@*" mode="pass1">
+        <xsl:copy>
+            <xsl:apply-templates select="node()|@*" mode="pass1"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template match="node()|@*" mode="pass2">
+        <xsl:copy>
+            <xsl:apply-templates select="node()|@*" mode="pass2"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <!--Replace-->
+    <xsl:template name="globalReplace">
+        <xsl:param name="outputString"/>
+        <xsl:param name="target"/>
+        <xsl:param name="replacement"/>
+        <xsl:choose>
+            <xsl:when test="contains($outputString,$target)">
+                
+                <xsl:value-of select=
+                    "concat(substring-before($outputString,$target),
+                    $replacement)"/>
+                <xsl:call-template name="globalReplace">
+                    <xsl:with-param name="outputString" 
+                        select="substring-after($outputString,$target)"/>
+                    <xsl:with-param name="target" select="$target"/>
+                    <xsl:with-param name="replacement" 
+                        select="$replacement"/>
+                </xsl:call-template>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$outputString"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <!--Reiterate-->
+        
+    <xsl:template  match="text()" mode="pass1">
+        <xsl:call-template name="globalReplace">
+            <xsl:with-param name="outputString" select="."/>
+            <xsl:with-param name="target" select="' he '"/>
+            <xsl:with-param name="replacement" select="' she '"/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <xsl:template  match="text()" mode="pass2">
+        <xsl:call-template name="globalReplace">
+            <xsl:with-param name="outputString" select="."/>
+            <xsl:with-param name="target" select="' his '"/>
+            <xsl:with-param name="replacement" select="' her '"/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <xsl:template match="/">
+        <xsl:apply-templates select="$vPass1"  mode="pass2"/>
+    </xsl:template>
+
+</xsl:stylesheet>
