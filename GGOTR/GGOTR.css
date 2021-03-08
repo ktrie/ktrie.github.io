@@ -25,6 +25,8 @@ h1 {
     font-size: 3em;
     text-align: center;
     font-family: 'Garamond', 'serif';
+    margin-top: 10%;
+     margin-bottom: 10%;
 }
 p {
     display: block;
