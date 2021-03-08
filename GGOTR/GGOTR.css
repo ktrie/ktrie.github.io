@@ -1,0 +1,41 @@
+ body {
+    background-color: #ffe6ff;
+    margin: 60px auto;
+    width: 55%;
+}
+
+nav ul, footer ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1 {
+    font-size: 2em;
+    letter-spacing: .35em;
+    text-align: center;
+    font-family: 'Garamond', 'serif';
+}
+p {
+    display: block;
+    font-size: 15px;
+    font-family: 'Garamond', 'serif';
+    color: black;
+    line-height: 125%;
+}
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}
+
