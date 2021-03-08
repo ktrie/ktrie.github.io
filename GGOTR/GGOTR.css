@@ -1,7 +1,7 @@
  body {
     background-color: #ffe6ff;
     margin: 60px auto;
-    width: 55%;
+    width: 60%;
 }
 
 nav ul, footer ul {
@@ -22,8 +22,7 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 2em;
-    letter-spacing: .35em;
+    font-size: 3em;
     text-align: center;
     font-family: 'Garamond', 'serif';
 }
@@ -31,7 +30,6 @@ p {
     display: block;
     font-size: 15px;
     font-family: 'Garamond', 'serif';
-    color: black;
     line-height: 125%;
 }
 footer {
