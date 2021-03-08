@@ -1,0 +1,145 @@
+
+
+/* Chapter number */
+ .cn { display: block;
+ font-size: small;
+ text-align: center;
+ margin-top: 20%;
+ margin-bottom: .5em;
+ margin-left: 0em;
+ margin-right: 0em;
+ text-indent: 0em;
+ font-family: Garamond;
+ }
+ 
+ /* Chapter title */
+     .ct { display: block;
+ font-size: 2em;
+ letter-spacing: .35em;
+ text-align: center;
+ margin-top: .5em;
+ margin-bottom: 6%;
+ margin-left: 0em;
+ margin-right: 0em;
+ text-indent: 0em;
+ font-family: Garamond, serif;
+ }
+ 
+ 
+ a {
+    text-decoration: none;
+    color: black;
+}
+ 
+ /* First paragraph */
+      .cotx { display: block;
+ font-size: 15px;
+ margin-top: 10em;
+ margin-bottom: 0em;
+ margin-left: 0em;
+ margin-right: 0em;
+ text-indent: 0em;
+ }
+ 
+ /* Body text */
+ 
+ body {
+    background-color: #ffe6ff;
+    margin: 60px auto;
+    width: 55%;
+}
+ 
+     p { display: block;
+ font-size: 15px;
+ font-family: Garamond, serif; 
+ margin-top: 0em;
+ margin-bottom: 0em;
+ margin-left: 0em;
+ margin-right: 0em;
+ text-indent: 1.5em;
+ line-height: 125%;
+ }
+ 
+ /* Break in body text */
+     .spb { display: block;
+ font-size: 15px;
+ margin-top: 2em;
+ margin-bottom: 0em;
+ margin-left: 0em;
+ margin-right: 0em;
+ text-indent: 1.5em;
+ }
+ 
+ /* Song formatting */
+     .vext { display: block;
+ font-size: 15px;
+ margin-top: 0em;
+ margin-bottom: 0em;
+ margin-left: 4em;
+ margin-right: 0em;
+ text-indent: -5%;
+ }
+
+    .vex-t { display: block;
+ font-size: 15px;
+ margin-top: 0em;
+ margin-bottom: 0em;
+ margin-left: 5em;
+ margin-right: 0em;
+ text-indent: -5%;
+ }
+ 
+    .ve-xt { display: block;
+ font-size: 15px;
+ margin-top: 0em;
+ margin-bottom: 0em;
+ margin-left: 6em;
+ margin-right: 0em;
+ text-indent: -5%;
+ }
+
+    .v-ext { display: block;
+ font-size: 15px;
+ margin-top: 0em;
+ margin-bottom: 0em;
+ margin-left: 7em;
+ margin-right: 0em;
+ text-indent: -5%;
+ }
+
+    .vext1 { display: block;
+ font-size: 15px;
+ margin-top: 1.5em;
+ margin-bottom: 0em;
+ margin-left: 4em;
+ margin-right: 0em;
+ text-indent: -5%;
+
+ }
+
+    .vext-3 { display: block;
+ font-size: 15px;
+ margin-top: 0em;
+ margin-bottom: 1.5em;
+ margin-left: 4em;
+ margin-right: 0em;
+ text-indent: -5%;
+ }
+
+    .vext3 { display: block;
+ font-size: 15px;
+ margin-top: 0em;
+ margin-bottom: 1.5em;
+ margin-left: 5em;
+ margin-right: 0em;
+ text-indent: -5%;
+ }
+
+    .vext-4 { display: block;
+ font-size: 15px;
+ margin-top: 1.5em;
+ margin-bottom: 1.5em;
+ margin-left: 2em;
+ margin-right: 0em;
+ text-indent: 1.5em;
+ }
