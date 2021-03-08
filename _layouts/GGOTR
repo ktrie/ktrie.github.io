@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>{{ page.title }}</title>
+			<!-- link to sbct stylesheet 
+      <link rel="stylesheet" type="text/css" href="/sbct/css/GGOTR.css">-->
+		</head>
+		<body>
+			<nav>
+	    		<ul>
+	        	<li><a href="/GGOTR/index.html">Home</a></li>
+            <li><a href="/GGOTR/manifesto.html">Feminist Manifesto</a></li>
+            <li><a href="/GGOTR/language.html">Pervasive Masculine Language</a></li>
+            <li><a href="/GGOTR/technical.html">Technical</a></li>
+            <li><a href="/GGOTR/ggotr_ch1.html">Sample Chapter</a></li>
+	    		</ul>
+			</nav>
+			<div class="container">
+			
+			{{ content }}
+			
+			</div><!-- /.container -->
+			<footer>
+	    		<ul>
+	        	<li><a href="https://github.com/ktrie">github.com/ktrie</a></li>
+			</ul>
+			</footer>
+		</body>
+	</html>
