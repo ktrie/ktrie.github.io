@@ -1,20 +1,23 @@
-
+@font-face {
+    font-family: Belfast;
+    src: url("belfast-serial-medium-regular.ttf");
+}
 
 /* Chapter number */
  .cn { display: block;
- font-size: small;
+ font-size: 1.5em;
  text-align: center;
  margin-top: 20%;
  margin-bottom: .5em;
  margin-left: 0em;
  margin-right: 0em;
  text-indent: 0em;
- font-family: Garamond;
+ font-family: 'Belfast', 'serif';
  }
  
  /* Chapter title */
      .ct { display: block;
- font-size: 2em;
+ font-size: 3.5em;
  letter-spacing: .35em;
  text-align: center;
  margin-top: .5em;
@@ -22,7 +25,7 @@
  margin-left: 0em;
  margin-right: 0em;
  text-indent: 0em;
- font-family: Garamond, serif;
+ font-family: 'Belfast', 'serif';
  }
  
  
@@ -33,7 +36,7 @@
  
  /* First paragraph */
       .cotx { display: block;
- font-size: 15px;
+ font-size: 20px;
  margin-top: 10em;
  margin-bottom: 0em;
  margin-left: 0em;
@@ -50,18 +53,18 @@
 }
  
      p { display: block;
- font-size: 15px;
+ font-size: 20px;
  font-family: 'Garamond', 'serif'; 
  margin-top: 0em;
  margin-bottom: 0em;
  margin-left: 0em;
  margin-right: 0em;
  text-indent: 1.5em;
- line-height: 125%;
+ line-height: 110%;
  }
 
 h1 { display:block;
- font-size: 15px;
+ font-size: 20px;
  font-family: 'Garamond', 'serif'; 
  font-weight: bold;
  margin-top: 1.5em;
@@ -69,13 +72,13 @@ h1 { display:block;
  margin-left: 0em;
  margin-right: 0em;
  text-indent: 1.5em;
- line-height: 125%;
+ line-height: 110%;
  
 }
  
  /* Break in body text */
      .spb { display: block;
- font-size: 15px;
+ font-size: 20px;
  margin-top: 2em;
  margin-bottom: 0em;
  margin-left: 0em;
@@ -85,7 +88,7 @@ h1 { display:block;
  
  /* Song formatting */
      .vext { display: block;
- font-size: 15px;
+ font-size: 20px;
  margin-top: 0em;
  margin-bottom: 0em;
  margin-left: 4em;
@@ -94,7 +97,7 @@ h1 { display:block;
  }
 
     .vex-t { display: block;
- font-size: 15px;
+ font-size: 20px;
  margin-top: 0em;
  margin-bottom: 0em;
  margin-left: 5em;
@@ -103,7 +106,7 @@ h1 { display:block;
  }
  
     .ve-xt { display: block;
- font-size: 15px;
+ font-size: 20px;
  margin-top: 0em;
  margin-bottom: 0em;
  margin-left: 6em;
@@ -112,7 +115,7 @@ h1 { display:block;
  }
 
     .v-ext { display: block;
- font-size: 15px;
+ font-size: 20px;
  margin-top: 0em;
  margin-bottom: 0em;
  margin-left: 7em;
@@ -121,7 +124,7 @@ h1 { display:block;
  }
 
     .vext1 { display: block;
- font-size: 15px;
+ font-size: 20px;
  margin-top: 1.5em;
  margin-bottom: 0em;
  margin-left: 4em;
@@ -131,7 +134,7 @@ h1 { display:block;
  }
 
     .vext-3 { display: block;
- font-size: 15px;
+ font-size: 20px;
  margin-top: 0em;
  margin-bottom: 1.5em;
  margin-left: 4em;
@@ -140,7 +143,7 @@ h1 { display:block;
  }
 
     .vext3 { display: block;
- font-size: 15px;
+ font-size: 20px;
  margin-top: 0em;
  margin-bottom: 1.5em;
  margin-left: 5em;
@@ -149,7 +152,7 @@ h1 { display:block;
  }
 
     .vext-4 { display: block;
- font-size: 15px;
+ font-size: 20px;
  margin-top: 1.5em;
  margin-bottom: 1.5em;
  margin-left: 2em;
