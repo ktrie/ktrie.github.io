@@ -13,21 +13,19 @@ title: Technical
 
 <h2>Source</h2>
 
-<p>I cannibalized an EPUB of <em>The Fellowship of the Ring</em> for the source XHTML. It is minimally marked up with attributes on paragraph elements to designate chapter number, chapter title, section breaks, and song formatting, but this doesn’t matter all that much since my templates match text.</p>
-
-<p><a href="https://github.com/ktrie/ktrie.github.io/blob/main/GGOTR/Fellowshipofth_chap-10.xhtml">Example source document</a></p>
+<p>I cannibalized an EPUB of <em>The Fellowship of the Ring</em> for the source XHTML <a href="https://github.com/ktrie/ktrie.github.io/blob/main/GGOTR/Fellowshipofth_chap-11.xhtml">(Example source document)</a>. It is minimally marked up with attributes on paragraph elements to designate chapter number, chapter title, section breaks, and song formatting, but this doesn’t matter all that much since my templates match text.</p>
 
 <h2>Variables</h2>
 
 <p><a href="/GGOTR/feminizer.xsl">My transformation</a> finds and replaces strings of text. A series of variables are used to pass through the text multiple times, each time searching for a different string in the output of the previous pass. This is slow and unwieldly. To truly eradicate masculine language from the source text, I could have kept adding variables indefinitely, but I felt that to continue past 13 replacements would have diminishing returns.</p>
 
-<img src="/GGOTR/feminizer_variables.jpeg" style="width:50%;height:50%;">
+<img src="/GGOTR/feminizer_variables.jpeg" style="width:70%;height:70%;">
 
 <h2>globalReplace</h2>
 
 <p>The globalReplace template replaces the strings.</p>
 
-<img src="/GGOTR/feminizer_replace.jpeg" style="width:50%;height:50%;">
+<img src="/GGOTR/feminizer_replace.jpeg" style="width:70%;height:70%;">
 
 <p>It is a little too strict for the messiness of natural language.</p> 
 
