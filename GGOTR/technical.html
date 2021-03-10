@@ -4,7 +4,7 @@ title: Technical
 ---
 <h1>{{ page.title }}</h1>
 
-<p>I used XSLT to transform The Fellowship of the Ring into a feminist text by swapping out masculine-inflected language for feminine-inflected language. I used a series of variables and templates to make multiple passes through the text to find and replace strings of characters.</p> 
+<p>I used XSLT to transform <em>The Fellowship of the Ring</em> into a feminist text by swapping out masculine-inflected language for feminine-inflected language. I used a series of variables and templates to make multiple passes through the text to find and replace strings of characters.</p> 
 
 <p>I don’t necessarily recommend using XSLT for this kind of project. The number of variables required quickly becomes unwieldly, and the precision in matching strings doesn’t suit the messiness of natural language.<p>
 
@@ -13,15 +13,23 @@ title: Technical
 
 <h2>Source</h2>
 
-<p>I cannibalized an EPUB of <em>The Fellowship of the Ring</em> for the source HTML. It is minimally marked up with attributes on paragraph elements to designate chapter number, chapter title, section breaks, and song formatting, but this doesn’t matter all that much since my templates match text.</p>
+<p>I cannibalized an EPUB of <em>The Fellowship of the Ring</em> for the source XHTML. It is minimally marked up with attributes on paragraph elements to designate chapter number, chapter title, section breaks, and song formatting, but this doesn’t matter all that much since my templates match text.</p>
+
+<p><a href="GGOTR/Fellowshipofth_chap-10.xhtml">Example source document</a></p>
 
 <h2>Variables</h2>
 
-<p>My transformation finds and replaces strings of text. A series of variables are used to pass through the text multiple times, each time searching for a different string in the output of the previous pass. This is slow and unwieldly. To truly eradicate masculine language from the source text, I could have kept adding variables indefinitely, but I felt that to continue past 13 replacements would have diminishing returns.</p>
+<p><a href="GGOTR/feminizer.xsl">My transformation</a> finds and replaces strings of text. A series of variables are used to pass through the text multiple times, each time searching for a different string in the output of the previous pass. This is slow and unwieldly. To truly eradicate masculine language from the source text, I could have kept adding variables indefinitely, but I felt that to continue past 13 replacements would have diminishing returns.</p>
+
+<img src="GGOTR/feminizer_variables.jpeg">
 
 <h2>globalReplace</h2>
 
-<p>The globalReplace template replaces the strings. It is a little too strict for the messiness of natural language.</p> 
+<p>The globalReplace template replaces the strings.</p>
+
+<img src="GGOTR/feminizer_replace.jpeg">
+
+<p>It is a little too strict for the messiness of natural language.</p> 
 
 <p>For example, the matches are case sensitive, so ‘ his ‘ requires a different variable than ‘ His ‘. For the most part, I decided it was not economical to include both lowercase and uppercase versions of the string. The exception is ‘ he ‘ versus ‘He ‘, since ‘He’ with an initial uppercase is so often in the subject position of the sentence.</p>
 
