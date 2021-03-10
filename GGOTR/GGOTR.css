@@ -24,12 +24,12 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     text-align: center;
     font-family: 'Belfast', 'serif';
     margin-top: 10%;
      margin-bottom: 10%;
-    letter-spacing: .15em;
+    letter-spacing: .05em;
 }
 
 h2, h3 {
@@ -38,7 +38,7 @@ h2, h3 {
 
 p {
     display: block;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Garamond', 'serif';
     line-height: 110%;
 }
