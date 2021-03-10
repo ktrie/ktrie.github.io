@@ -8,38 +8,16 @@ title: Technical & Linguistic Problems
 
 <p>I don’t necessarily recommend using XSLT for this kind of project. The number of variables required quickly becomes unwieldly, and the precision in matching strings doesn’t suit the messiness of natural language.<p>
 
-<p>The output is therefore imperfect. I made no attempt to find every masculine-inflected word in the text, and slight variations in strings (he vs. he’s, for example) mean that some male pronouns have snuck through. At the risk of overexplaining the conceit of the project, however, of course merely swapping out male characters in favor of female ones does not make a book feminist, so the result was doomed to be imperfect from the start. I do not expect that at any point the reader of the gender-swapped <em>Girl Gang of the Ring</em> will forget that the characters are in linguistic drag, and so from an artistic point of view it doesn’t matter if the occasional ‘he’s’ or “daddy” slips in. Just as in a drag show, the point is to play with gender, not to reify it.</p>
+<p>The output is therefore imperfect. I made no attempt to find every masculine-inflected word in the text, and slight variations in strings (he vs. he’s, for example) mean that some male pronouns have snuck through. At the risk of overexplaining the conceit of the project, however, of course merely swapping out male characters in favor of female ones does not make a book feminist, so the result was doomed to be imperfect from the start. I do not expect that at any point the reader of the gender-swapped <em>Girl Gang of the Ring</em> will forget that the characters are in linguistic drag, and so from an artistic point of view it doesn’t matter if the occasional ‘he’s’ or 'lad' slips in. Just as in a drag show, the point is to play with gender, not to reify it.</p>
 
 
 <h2>Source</h2>
 
-<p>I cannibalized an EPUB of <em>The Fellowship of the Ring</em> for the source HTML. It is minimally marked up with attributes on <p> elements to designate chapter number, chapter title, section breaks, and song formatting, but this doesn’t matter all that much since my templates match text.</p>
+<p>I cannibalized an EPUB of <em>The Fellowship of the Ring</em> for the source HTML. It is minimally marked up with attributes on paragraph elements to designate chapter number, chapter title, section breaks, and song formatting, but this doesn’t matter all that much since my templates match text.</p>
 
 <h2>Variables</h2>
 
 <p>My transformation finds and replaces strings of text. A series of variables are used to pass through the text multiple times, each time searching for a different string in the output of the previous pass. This is slow and unwieldly. To truly eradicate masculine language from the source text, I could have kept adding variables indefinitely, but I felt that to continue past 13 replacements would have diminishing returns.</p>
-
-<h3>Replacements</h3>
-
-<h4>Pronouns</h4>
-
-<p>The first category of words I chose to replace in the 13 passes are pronouns: he, He, his, and him. “man” obviously had to go, as did the race “Men.”</p>
-
-<h4>Kinship terms</h4>
-
-<p>Who would have guessed that genealogy would be so important in <em>Lord of the Rings</em>? I had to replace many kinship terms: father, son, nephew, uncle. In the first chapter, “dad” and “daddy” also appear, but I had to draw the line somewhere. The obsession with patriarchal lineage is perhaps unsurprising, but it is also frustrating from a feminist point of view, since you might never know from these genealogies that reproduction often tends to require women.</p>
-
-<h4>Titles</h4>
-
-<p>The pervasive “Mr.” Baggins is replaced by “Ms.” In addition, “king” is replaced by “queen”. Beyond this, I chose to leave titles as is, since I often found the feminine counterparts lacking. “Master” Baggins suggests more power and force than “mistress” or “ma’am”; compared to “lord,” “lady” is downright toothless.</p>
-
-<p>This problem of unequal equivalence is most obvious with the final replacement term: “Fellowship” of the Ring becomes “Girl Gang” of the Ring. According to the Oxford English Dictionary, a fellow is a “man, a male person.” A fellow is also a “partner, a companion”; a “person’s equal in position, rank, or status; someone’s peer.” This is obviously a crucial dimension to capture in changing the title, since the thing that was exceptional in the novel was that Men, dwarves, elves, and hobbits were working together as coequals. What replacement term could describe a nonhierarchical group of equals that is explicitly gendered feminine? Possible candidates included “comrades” (too communist, not female enough), “coven” (too specifically witchy, not enough emphasis on equality), and “ladies” (requires a certain tone: “heyyyyyy, ladies” shouted when greeting one’s friends at a bar). While “girl gang” lacks the gravitas of “fellowship,” it describes a group of women in which the members share equal status. I might posit that if “girl gang” sounds trivial and silly, it is possible that, in a patriarchal society, female friendships are viewed as trivial. It is also possible that the bubblegum girl power feel of “girl gang” could be interpreted as a radical disavowal of a masculinity that takes itself too seriously.</p>
-
-<h4>Names</h4>
-
-<p>I elected not to replace characters’ names. Although changing the names of even just the Company to more “feminine” forms would have easily doubled the number of variables in my transformation, it was not mere laziness that made me reluctant to do so. Some names, like Sam Gamgee or Tom Bombadil, are traditionally masculine in our world, but many are nonsense words. There is nothing inherently masculine about “Legolas” or “Gimli.” Maybe “Frodo” sounds masculine because it ends in “o,” but it’s also not unheard of for a woman’s name to end in that sound (Willow, Juno, Margot).</p>  
-
-<p>Why then would it feel so much more comfortable if Frodo were to become Frieda? Since with this project I hope to provoke productive discomfort around gender, I wanted to lean into my own discomfort in imagining that someone named Gandalf could be a woman.</p>
 
 <h2>globalReplace</h2>
 
