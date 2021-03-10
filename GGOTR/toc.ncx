@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     version="2005-1">
+   <head>
+      <meta name="dtb:uid" content="9780007322497"/>
+      <meta name="cover-image" content="cover-image"/>
+      <meta name="dtb:depth" content="1"/>
+      <meta name="dtb:totalPageCount" content="0"/>
+      <meta name="dtb:maxPageNumber" content="0"/>
+   </head>
+   <docTitle>
+      <text>The Girl Gang Of The Ring</text>
+   </docTitle>
+   <docAuthor>
+      <text>J XX Tolkien</text>
+   </docAuthor>
+   <navMap>
+     <navPoint playOrder="1" class="blurb" id="toc"><navLabel><text>TABLE OF CONTENTS</text></navLabel><content src="toc.xhtml"/></navPoint>
+      <navPoint playOrder="2" class="preface" id="pref-1"><navLabel><text>FEMINIST MANIFESTO</text></navLabel><content src="Note.xhtml"/></navPoint>
+      <navPoint playOrder="3" class="prologue" id="prol-1"><navLabel><text>PROLOGUE</text></navLabel><content src="PROLOGUE.xhtml"/></navPoint>
+      <navPoint playOrder="4" class="part" id="part-1"><navLabel><text>BOOK ONE</text></navLabel><content src="BOOK ONE.xhtml"/>
+      <navPoint playOrder="5" class="CHAPTER" id="chap-1"><navLabel><text>CHAPTER 1: A LONG-EXPECTED PARTY</text></navLabel><content src="Chapter 1.xhtml"/></navPoint>
+      <navPoint playOrder="6" class="CHAPTER" id="chap-2"><navLabel><text>CHAPTER 2: THE SHADOW OF THE PAST</text></navLabel><content src="Chapter 2.xhtml"/></navPoint>
+      <navPoint playOrder="7" class="CHAPTER" id="chap-3"><navLabel><text>CHAPTER 3: THREE IS COMPANY</text></navLabel><content src="Chapter 3.xhtml"/></navPoint>
+      <navPoint playOrder="8" class="CHAPTER" id="chap-4"><navLabel><text>CHAPTER 4: A SHORT CUT TO MUSHROOMS</text></navLabel><content src="Chapter 4.xhtml"/></navPoint>
+      <navPoint playOrder="9" class="CHAPTER" id="chap-5"><navLabel><text>CHAPTER 5: A CONSPIRACY UNMASKED</text></navLabel><content src="Chapter 5.xhtml"/></navPoint>
+      <navPoint playOrder="10" class="CHAPTER" id="chap-6"><navLabel><text>CHAPTER 6: THE OLD FOREST</text></navLabel><content src="Chapter 6.xhtml"/></navPoint>
+      <navPoint playOrder="11" class="CHAPTER" id="chap-7"><navLabel><text>CHAPTER 7: IN THE HOUSE OF TOM BOMBADIL</text></navLabel><content src="Chapter 7.xhtml"/></navPoint>
+      <navPoint playOrder="12" class="CHAPTER" id="chap-8"><navLabel><text>CHAPTER 8: FOG ON THE BARROW-DOWNS</text></navLabel><content src="Chapter 8.xhtml"/></navPoint>
+      <navPoint playOrder="13" class="CHAPTER" id="chap-9"><navLabel><text>CHAPTER 9: AT THE SIGN OF THE PRANCING PONY</text></navLabel><content src="Chapter 9.xhtml"/></navPoint>
+      <navPoint playOrder="14" class="CHAPTER" id="chap-10"><navLabel><text>CHAPTER 10: STRIDER</text></navLabel><content src="Chapter 10.xhtml"/></navPoint>
+      <navPoint playOrder="15" class="CHAPTER" id="chap-11"><navLabel><text>CHAPTER 11: A KNIFE IN THE DARK</text></navLabel><content src="Chapter 11.xhtml"/></navPoint>
+      <navPoint playOrder="16" class="CHAPTER" id="chap-12"><navLabel><text>CHAPTER 12: FLIGHT TO THE FORD</text></navLabel><content src="Chapter 12.xhtml"/></navPoint></navPoint>
+      <navPoint playOrder="17" class="part" id="part-2"><navLabel><text>BOOK TWO</text></navLabel><content src="BOOK TWO.xhtml"/>
+      <navPoint playOrder="18" class="CHAPTER" id="chap-13"><navLabel><text>CHAPTER 1: MANY MEETINGS</text></navLabel><content src="Chapter 13.xhtml"/></navPoint>
+      <navPoint playOrder="19" class="CHAPTER" id="chap-14"><navLabel><text>CHAPTER 2: THE COUNCIL OF ELROND</text></navLabel><content src="Chapter 14.xhtml"/></navPoint>
+      <navPoint playOrder="20" class="CHAPTER" id="chap-15"><navLabel><text>CHAPTER 3: THE RING GOES SOUTH</text></navLabel><content src="Chapter 15.xhtml"/></navPoint>
+      <navPoint playOrder="21" class="CHAPTER" id="chap-16"><navLabel><text>CHAPTER 4: A JOURNEY IN THE DARK</text></navLabel><content src="Chapter 16.xhtml"/></navPoint>
+      <navPoint playOrder="22" class="CHAPTER" id="chap-17"><navLabel><text>CHAPTER 5: THE BRIDGE OF KHAZAD-DÛM</text></navLabel><content src="Chapter 17.xhtml"/></navPoint>
+      <navPoint playOrder="23" class="CHAPTER" id="chap-18"><navLabel><text>CHAPTER 6: LOTHLÓRIEN</text></navLabel><content src="Chapter 18.xhtml"/></navPoint>
+      <navPoint playOrder="24" class="CHAPTER" id="chap-19"><navLabel><text>CHAPTER 7: THE MIRROR OF GALADRIEL</text></navLabel><content src="Chapter 19.xhtml"/></navPoint>
+      <navPoint playOrder="25" class="CHAPTER" id="chap-20"><navLabel><text>CHAPTER 8: FAREWELL TO LÓRIEN</text></navLabel><content src="Chapter 20.xhtml"/></navPoint>
+      <navPoint playOrder="26" class="CHAPTER" id="chap-21"><navLabel><text>CHAPTER 9: THE GREAT RIVER</text></navLabel><content src="Chapter 21.xhtml"/></navPoint>
+      <navPoint playOrder="27" class="CHAPTER" id="chap-22"><navLabel><text>CHAPTER 10: THE BREAKING OF THE GIRL GANG</text></navLabel><content src="Chapter 22.xhtml"/></navPoint></navPoint>
+   </navMap>
+</ncx>
