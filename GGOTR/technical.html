@@ -8,7 +8,7 @@ title: Technical
 
 <p>I don’t necessarily recommend using XSLT for this kind of project. The number of variables required quickly becomes unwieldly, and the precision in matching strings doesn’t suit the messiness of natural language.<p>
 
-<p>The output is therefore imperfect. I made no attempt to find every masculine-inflected word in the text, and slight variations in strings (he vs. he’s, for example) mean that some male pronouns have snuck through. At the risk of overexplaining the conceit of the project, however, of course merely swapping out male characters in favor of female ones does not make a book feminist, so the result was doomed to be imperfect from the start. I do not expect that at any point the reader of the gender-swapped <em>Girl Gang of the Ring</em> will forget that the characters are in linguistic drag, and so from an artistic point of view it doesn’t matter if the occasional ‘he’s’ or 'lad' slips in. Just as in a drag show, the point is to play with gender, not to reify it.</p>
+<p>The output is therefore imperfect. I made no attempt to find every masculine-inflected word in the text, and slight variations in strings (he vs. he’s, for example) mean that some male pronouns have snuck through. At the risk of overexplaining the conceit of the project, however, of course merely swapping out male characters in favor of female ones does not make a book feminist, so the result was doomed to be imperfect from the start. I do not expect that at any point the reader of the gender-swapped <em>Girl Gang of the Ring</em> will forget that the characters are in linguistic drag, and so from an artistic point of view it doesn’t matter if the occasional 'he’s' or 'lad' slips in. Just as in a drag show, the point is to play with gender, not to reify it.</p>
 
 
 <h2>Source</h2>
@@ -29,14 +29,16 @@ title: Technical
 
 <p>It is a little too strict for the messiness of natural language.</p> 
 
-<p>For example, the matches are case sensitive, so ‘ his ‘ requires a different variable than ‘ His ‘. For the most part, I decided it was not economical to include both lowercase and uppercase versions of the string. The exception is ‘ he ‘ versus ‘He ‘, since ‘He’ with an initial uppercase is so often in the subject position of the sentence.</p>
+<p>For example, the matches are case sensitive, so ' his ' requires a different variable than ' His '. For the most part, I decided it was not economical to include both lowercase and uppercase versions of the string. The exception is ' he ' versus 'He ', since 'He' with an initial uppercase is so often in the subject position of the sentence.</p>
 
-<p>It also is very picky about what is on either side of the desired replacement string. Without a space on either side, ‘he’ transforms common words like the, their, and here into tshe, tsheir, and shere. Some of these are quite amusing—heir into sheir, hero into shero—but on the whole it is unreadable. With a space on either side, ‘ he ‘ misses the contraction ‘he’s’, but it didn’t happen often enough for me to make a separate ‘ he’s’ template.</p>
+<p>It also is very picky about what is on either side of the desired replacement string. Without a space on either side, 'he' transforms common words like the, their, and here into tshe, tsheir, and shere. Some of these are quite amusing—heir into sheir, hero into shero—but on the whole it is unreadable. With a space on either side, ' he ' misses the contraction 'he’s', but it didn’t happen often enough for me to make a separate ' he’s' template.</p>
 
-<p>I tried to cheat with some words: for example, ‘ him’ is often in object position in an English sentence and might therefore be followed by a comma or a period. In the template I omitted the space following so that the strings ‘ him’, ‘ him,’, and ‘ him.’ might also be matched.</p>
+<p>I tried to cheat with some words: for example, ' him' is often in object position in an English sentence and might therefore be followed by a comma or a period. In the template I omitted the space following so that the strings ' him', ' him,', and ' him.' might also be matched.</p>
 
-<p>There is probably a more elegant way to circumvent the messiness of natural language. However, from a purely artistic point of view, I have no desire to reaffirm the gender binary, so it doesn’t matter to me if the occasional ‘he’s’ slips in.</p>
+<p>There is probably a more elegant way to circumvent the messiness of natural language. However, from a purely artistic point of view, I have no desire to reaffirm the gender binary, so it doesn’t matter to me if the occasional 'he’s' slips in.</p>
 
 <h2>Repackage as EPUB</h2>
 
 <p>I created a project in Oxygen to apply the transformation to the 22 chapters and prologue of The Fellowship of the Ring. Because my transformation matches text and not structure, you could theoretically apply it to any book you wanted to gender swap. The only thing you would need to change is the XPath for the result document.</p>
+
+<p>I rebuilt the OPF file and NCX table of contents to include my feminist manifesto, exclude some extraneous front and back matter, and reflect the new names of the XHTML documents for each chapter. I also applied my own stylesheet. Then I zipped the content into an EPUB.</p>
