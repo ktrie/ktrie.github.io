@@ -47,7 +47,7 @@
         <xsl:variable name="vPass13">
             <xsl:apply-templates mode="pass13" select="$vPass12"/>
         </xsl:variable>
-        <xsl:result-document href="{concat('/Users/kyratriebold/Desktop/ggotr/',xhtml:html/xhtml:body/xhtml:div/xhtml:p[1],'.xhtml')}">
+        <xsl:result-document href="{concat('<!--your filepath-->',xhtml:html/xhtml:body/xhtml:div/xhtml:p[1],'.xhtml')}">
             <xsl:copy-of select="$vPass13"/> 
         </xsl:result-document>
     </xsl:template>
